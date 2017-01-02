@@ -3,6 +3,7 @@ An Intel Realsense Camera R200 implementation of April Tags in ROS
 
 ## RealSense Camera + April Tags Startup ROS Calls:
 This will run the drivers, give you the pose estimate from the /tag_detection_pose topic and give you visual feedback. 
+
 1. `roslaunch realsenseCamera_aprilTags realsense_apriltags.launch`
 
 2. `rostopic echo /tag_detections_pose`
