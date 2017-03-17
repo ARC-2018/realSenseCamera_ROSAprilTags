@@ -5,11 +5,11 @@
 
 <arg name="show_tag_detections" default="true"/>
 
-<!-- Real sense R200 driver -->
+<!-- Real sense R200 driver 
 <include file="$(find realsense_camera)/launch/r200_nodelet_modify_params.launch"/>
-<param name="enable_depth" value="false"/> 
+<param name="enable_depth" value="false"/> -->
 
-  <node pkg="realsenseCamera_aprilTags" type="apriltag_detector_node" name="apriltag_detector" output="screen">
+  <node pkg="apriltags_rosMod" type="apriltag_detector_node" name="apriltag_detector" output="screen">
 
     <remap from="camera_info" to="usb_cam/camera_info"/>
     <remap from="image_rect" to="usb_cam/image_raw"/>
